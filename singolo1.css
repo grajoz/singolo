@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Lato; 
+    src: url(assets/Lato-Regular.ttf);
+   }
+html {
+    font-family: "Lato";
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-weight: 700;
+}
+body {
+    margin:0;
+    
+}
+.header {
+    height: 89px;
+    background-color: #2d303a;
+    color: white;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 12px;
+    line-height: 6px;
+    color: #f06c64;
+    font-weight: 700;
+}
+
+.header-dottom {
+    height: 6px;
+    background-color: #323746;
+}
+
+.slider{
+    height: auto;
+}
+.slider-img{
+    height: 600px;
+    background-color: #f06c64;
+}
+
+.slider-dottom{ 
+    height: 15px;
+    background-color: #ea676b;
+}
+
+
+.our-services{  overflow: hidden;
+    height: 495px; 
+    background-color: #f2f2f2;
+
+}
+.services-dottom{
+    height: 6px;
+    background-color: #ffffff;
+}
