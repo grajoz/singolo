@@ -1,21 +1,23 @@
 @font-face {
     font-family: Lato; 
     src: url(assets/Lato-Regular.ttf);
-   }
+}
 html {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
 }
 
-h1 {
+h1 {margin:40px auto auto  41px ;
     font-size: 25px;
     line-height: 6px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 200;/* разницы что 200 что 700 невидно*/
+    letter-spacing: -0.5px; /*!!! суперчеткое совпадение*/
 }
 body {
-    margin:0;
-    
+    margin:0 auto;
+    width: 1020px
 }
+
 .header {
     height: 89px;
     background-color: #2d303a;
@@ -23,14 +25,37 @@ body {
     overflow: hidden;
 }
 
-.nav {
+.star {
+    color:#f06c64;
+}
+
+.nav {position: absolute; /* Абсолютное позиционирование */
+    top: 46px; /* Положение от verhnego края */
+    left: 754px; 
+    margin:0;
+    padding:0;
     display: flex;
     flex-direction: row;
-
     font-size: 12px;
     line-height: 6px;
+    font-weight: 400;
+}
+
+.li-first{
+    padding-left: 20px; 
     color: #f06c64;
-    font-weight: 700;
+    list-style-type: none; /* Убираем маркеры */
+    padding-right: 27px;
+}
+
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.li-next{
+    color:#ffffff;
+    padding-right: 26px; 
+    padding-left: 3px; /* Отступ от маркера до текста */
 }
 
 .header-dottom {
@@ -38,25 +63,140 @@ body {
     background-color: #323746;
 }
 
-.slider{
-    height: auto;
-}
 .slider-img{
-    height: 600px;
+    height: 594px;
     background-color: #f06c64;
+    position: relative;
+}
+
+.iphone_horizontal{
+    position: absolute;
+    left: 416px;
+    top: 169px;
+}
+
+.iphone_vertical{
+    position: absolute;
+    left: 112px;
+    top: 52px;
+}
+
+.chev_pre{
+    position: absolute;
+    left: 43px;
+    top: 280px;
+}
+
+.chev_next{
+    position: absolute;
+    right: 41px;
+    top: 280px;
 }
 
 .slider-dottom{ 
-    height: 15px;
+    height: 5px;
     background-color: #ea676b;
+    /*background-color: #2d303a;
+    width: 700px;*/
 }
 
 
 .our-services{  overflow: hidden;
     height: 495px; 
     background-color: #f2f2f2;
+}
+
+h2 {letter-spacing: 0.5px;
+    padding-top: 42px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 2000;
+    text-align: left;
+}
+
+.our-services-p{padding-top: 2px;
+    font-size: 18px;
+    line-height: 31px;
+    color: #767e9e;
+    font-weight: 300;
+    letter-spacing: -0.20px;
+    padding-left: 40px; 
+    padding-right: 40px;
+}
+
+.our-services-list{
+    list-style-type: none;
+    display: flex;
+   margin-top: 35px;    
+    
+}
+
+.service-li {
+    width: 300px;
+    margin-right: 20px;
+    position: relative; /* Относительное позиционирование Положение элемента 
+устанавливается относительно его исходного места. Добавление свойств left
+ top, right и bottom изменяет позицию элемента и сдвигает его в ту или 
+ иную сторону от первоначального расположения.*/
 
 }
+.service-img{
+    position: absolute;/*Указывает, что элемент абсолютно позиционирован, 
+    при этом другие элементы отображаются на веб-странице словно абсолютно 
+    позиционированного элемента и нет. Положение элемента задается свойствами
+     left, top, right и bottom, также на положение влияет значение свойства
+      position родительского элемента. Так, если у родителя значение
+       position установлено как static или родителя нет, то отсчет координат
+        ведется от края окна браузера. Если у родителя значение position задано
+         как fixed, relative или absolute, то отсчет координат ведется от края 
+         родительского элемента.*/
+
+         /*как то эти 2 нижних эемента ну ни как не меняю картину)))*/
+    /*display: flex;
+    align-items: center; /*производит выравнивание всех элементов внутри
+     флекс контейнера вдоль поперечной оси, или производит выравнивание
+      всех элементов*/
+   /* justify-content: center; /*определяет как браузер распределяет 
+    пространство между и вокруг флекс элементов вдоль главной оси контейнера*/
+    width: 55px;
+    height: 55px;
+    border: 2px solid #666D89; /* толщина кружка*/
+    border-radius: 50%; /*кружочек*/
+    top: 11px;
+}
+
+    h3 {
+    letter-spacing: -0.3px;
+    color: #666D89;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 80px;
+    margin-top: 9px;
+    margin-bottom: -0.5px; /*вот приподнял на пол пикселька и тест снизу пошти идеално))))))*/
+}
+
+.service { font-size: 12px;
+    line-height: 21px;
+    color: #767E9E;
+    margin-left: 80px;
+    letter-spacing: 0px;
+    text-align:justify;  /*значение justify растягивание текста по ширине*/
+}
+
+.service + .our-services-list  {
+    padding-top: -40px;
+}
+
+.our-services-list-next{
+    list-style-type: none;
+    display: flex;
+   margin-top: -5px;     
+}
+
 .services-dottom{
     height: 6px;
     background-color: #ffffff;
