@@ -71,7 +71,7 @@ a {
 
 .iphone_horizontal{
     position: absolute;
-    left: 416px;
+    left: 417px;
     top: 169px;
 }
 
@@ -83,8 +83,9 @@ a {
 
 .chev_pre{
     position: absolute;
-    left: 43px;
+    left: 42px;
     top: 280px;
+    transform: rotate(180deg);
 }
 
 .chev_next{
