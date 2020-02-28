@@ -15,7 +15,7 @@ h1 {margin:40px auto auto  41px ;
 }
 body {
     margin:0 auto;
-    width: 1020px
+    width: 1020px;
 }
 
 .header {
@@ -114,7 +114,7 @@ h2 {letter-spacing: 0.5px;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-weight: 2000;
+    font-weight: 2000px;
     text-align: left;
 }
 
@@ -202,3 +202,5 @@ h2 {letter-spacing: 0.5px;
     height: 6px;
     background-color: #ffffff;
 }
+
+
