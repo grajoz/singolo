@@ -96,6 +96,7 @@ body {width: 1020px;
     grid-template-rows: 1fr 1fr 1fr;
     justify-self: center;
     align-self: center;
+    overflow: hidden;
 }
 .portfolio__img {  
     width:220px; /* ширина блока */
@@ -203,6 +204,8 @@ body {width: 1020px;
     font-weight: 900;
     text-align: left;
     margin-bottom: 0;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
 }
 .person__text {
     margin-top: 10px;
