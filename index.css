@@ -1,0 +1,603 @@
+@font-face {
+    font-family: Lato; 
+    src: url(assets/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Bold; 
+    src: url(assets/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato-Black; 
+    src: url(assets/Lato-Black.ttf);
+}
+html {
+    font-family: "Lato", sans-serif;
+}
+body {width: 1020px;
+    margin:0 auto;
+   }
+.wraper {
+    width: 1020px;
+    overflow: hidden; /*убрали белую полоску сверху*/
+}
+
+
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {margin:40px auto auto  41px ;
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-weight: 200;/* разницы что 200 что 700 невидно*/
+    letter-spacing: -0.5px; /*!!! суперчеткое совпадение*/
+}
+body {
+    margin:0 auto;
+    width: 1020px;
+}
+
+.header {
+    height: 89px;
+    background-color: #2d303a;
+    color: white;
+    overflow: hidden;
+}
+
+.star {
+    color:#f06c64;
+}
+
+.nav {position: absolute; /* Абсолютное позиционирование */
+    top: 46px; /* Положение от verhnego края */
+    left: 754px; 
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 6px;
+    font-weight: 400;
+}
+
+.li-first{
+    padding-left: 20px; 
+    color: #f06c64;
+    list-style-type: none; /* Убираем маркеры */
+    padding-right: 27px;
+}
+
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.li-next{
+    color:#ffffff;
+    padding-right: 26px; 
+    padding-left: 3px; /* Отступ от маркера до текста */
+}
+
+.header-dottom {
+    height: 6px;
+    background-color: #323746;
+}
+
+.slider-img{
+    height: 594px;
+    background-color: #f06c64;
+    position: relative;
+}
+
+.iphone_horizontal{
+    position: absolute;
+    left: 417px;
+    top: 169px;
+}
+
+.iphone_vertical{
+    position: absolute;
+    left: 112px;
+    top: 52px;
+}
+
+.chev_pre{
+    position: absolute;
+    left: 42px;
+    top: 280px;
+    transform: rotate(180deg);
+}
+
+.chev_next{
+    position: absolute;
+    right: 41px;
+    top: 280px;
+}
+
+.slider-dottom{ 
+    height: 5px;
+    background-color: #ea676b;
+    /*background-color: #2d303a;
+    width: 700px;*/
+}
+
+
+.our-services{  overflow: hidden;
+    height: 495px; 
+    background-color: #f2f2f2;
+}
+
+h2 {letter-spacing: 0.5px;
+    padding-top: 42px;
+    padding-left: 40px; 
+    padding-right: 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 2000px;
+    text-align: left;
+}
+
+.our-services-p{padding-top: 2px;
+    font-size: 18px;
+    line-height: 31px;
+    color: #767e9e;
+    font-weight: 300;
+    letter-spacing: -0.20px;
+    padding-left: 40px; 
+    padding-right: 40px;
+}
+
+.our-services-list{
+    list-style-type: none;
+    display: flex;
+   margin-top: 35px;    
+    
+}
+
+.service-li {
+    width: 300px;
+    margin-right: 20px;
+    position: relative; /* Относительное позиционирование Положение элемента 
+устанавливается относительно его исходного места. Добавление свойств left
+ top, right и bottom изменяет позицию элемента и сдвигает его в ту или 
+ иную сторону от первоначального расположения.*/
+
+}
+.service-img{
+    position: absolute;/*Указывает, что элемент абсолютно позиционирован, 
+    при этом другие элементы отображаются на веб-странице словно абсолютно 
+    позиционированного элемента и нет. Положение элемента задается свойствами
+     left, top, right и bottom, также на положение влияет значение свойства
+      position родительского элемента. Так, если у родителя значение
+       position установлено как static или родителя нет, то отсчет координат
+        ведется от края окна браузера. Если у родителя значение position задано
+         как fixed, relative или absolute, то отсчет координат ведется от края 
+         родительского элемента.*/
+
+         /*как то эти 2 нижних эемента ну ни как не меняю картину)))*/
+    /*display: flex;
+    align-items: center; /*производит выравнивание всех элементов внутри
+     флекс контейнера вдоль поперечной оси, или производит выравнивание
+      всех элементов*/
+   /* justify-content: center; /*определяет как браузер распределяет 
+    пространство между и вокруг флекс элементов вдоль главной оси контейнера*/
+    width: 55px;
+    height: 55px;
+    border: 2px solid #666D89; /* толщина кружка*/
+    border-radius: 50%; /*кружочек*/
+    top: 11px;
+}
+
+    h3 {
+    letter-spacing: -0.3px;
+    color: #666D89;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 80px;
+    margin-top: 9px;
+    margin-bottom: -0.5px; /*вот приподнял на пол пикселька и тест снизу пошти идеално))))))*/
+}
+
+.service { font-size: 12px;
+    line-height: 21px;
+    color: #767E9E;
+    margin-left: 80px;
+    letter-spacing: 0px;
+    text-align:justify;  /*значение justify растягивание текста по ширине*/
+}
+
+.service + .our-services-list  {
+    padding-top: -40px;
+}
+
+.our-services-list-next{
+    list-style-type: none;
+    display: flex;
+   margin-top: -5px;     
+}
+
+.services-dottom{
+    height: 6px;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+/*singolo 2*/
+
+.portfolio {
+   
+    height: 865px;
+    background-color: #2d303a;
+    margin: 0px;
+}
+/*overflow: hidden; управляет отображением содержания
+     блочного элемента, если оно целиком не помещается и выходит за область заданных размеров. hidden
+    Отображается только область внутри элемента, остальное будет скрыто. */
+
+.portfolio__caption {
+    font-size: 29.5px; 
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-weight: 1500;
+    /*text-align: left;*/
+    padding-top: 69.5px;
+    padding-left: 40px;
+    margin: 0px;
+    letter-spacing: 0.45px;
+}
+.portfolio__text { 
+    padding-top: 26px;
+    padding-left: 41px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin: 0px;
+    letter-spacing: -0.36px;
+}
+
+.portfolio__buttons {
+    padding-top: 10px;
+    padding-left: 41px;
+}
+
+.portfolio__button {
+    padding-top: 0px;
+    padding-bottom: 2px;
+    margin-right: 6px;
+    font-family: "Lato";
+    font-size: 12px;
+    color: #666d89;
+    height: 22px;
+    border-radius: 5px;
+    background-color:   #2d303a;
+    background-repeat:no-repeat;
+    border: 1px solid  #666d89;
+    cursor:pointer;
+    overflow: hidden;
+}
+.portfolio_button_all {
+    width: 29px;
+    color: #dedede;
+    border: 1px solid  #c5c5c5;
+}
+.portfolio_button_artwork {
+    margin-left: -1px;
+}
+.portfolio__imgs {
+    margin-top: 19px;
+    padding-right: 30px;
+    padding-left: 31px;
+    display: grid; 
+    grid-row-gap: 19px; /*растояние между рядами*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*определяет количество, наименование и ширину столбцов и строк в макете
+                                             сетки, задает шаблон макета сетки, ссылаясь при этом на имена областей
+                                              элементов, которые задаются с помощью свойства*/
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+}
+.portfolio__img {  
+    width:220px; /* ширина блока */
+    height:188px; /* высота блока */
+    margin: auto;
+    }
+.portfolio_img_img1 {
+    background: url(assets/img1.svg);
+}
+
+.portfolio_img_img2 {
+    background: url(assets/img2.svg);
+}
+.portfolio_img_img3 {
+    background: url(assets/img3.svg);
+}
+.portfolio_img_img4 {
+    background: url(assets/img4.svg);
+}
+.portfolio_img_img5 {
+    background: url(assets/img5.svg);
+}
+.portfolio_img_img6 {
+    background: url(assets/img6.svg);
+}
+.portfolio_img_img7 {
+    background: url(assets/img7.svg);
+}
+.portfolio_img_img8 {
+    background: url(assets/img8.svg);
+}
+.portfolio_img_img9 {
+    background: url(assets/img9.svg);
+}
+.portfolio_img_img10 {
+    background: url(assets/img10.svg);
+}
+.portfolio_img_img11 {
+    background: url(assets/img11.svg);
+}
+.portfolio_img_img12 {
+    background: url(assets/img12.svg);
+}
+
+.portfolio__dottom { 
+    height: 5px;
+    background-color:#323746
+}
+.about-us {
+    height: 734px;
+    background-color: #f2f2f2;
+} 
+.about-us__dottom {
+    height: 6px;
+    background-color:#f2f2f2;
+}
+
+.about-us__caption {
+    padding-top: 68px;
+    margin: 0;
+    margin-left: 41px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -0.15px;
+}
+.about-us__text {
+    text-align:justify;
+    margin-top: 27px;
+    padding-left: 40.5px;
+    width: 939px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    letter-spacing: -0.33px;
+}
+
+.persons { 
+    margin-top: 48px;
+    padding-left: 39.5px;
+    padding-right: 33.5px;
+    display: grid;
+    grid-column-gap: 14px; /*растояние между рядами*/
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-self: center;
+}
+.person {
+    width: 302px;
+}
+
+.person__name {
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 0;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+}
+.person__text {
+    margin-top: 10px;
+    width: 300px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: -0.2px;
+    text-align:justify;
+}
+
+.person__social-media {
+    height: 110px;
+}
+.person__social-media {
+    padding-top: 10px;
+    padding-left: 0.5px;
+}
+.person__link {
+    padding-right: 2px;
+}
+
+.get-a-quote {
+    height: 648px;
+    background-color: #f06c64;
+    margin: 0px;
+}
+
+
+/*singolo3*/
+
+.get-a-quote__caption {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-weight: 900;
+    text-align: left;
+    font-family: "Lato-Black";
+    font-weight: 1500;
+    padding-top: 68px;
+    padding-left: 40px;
+    margin: 0px;
+    letter-spacing: -0.2px;
+}
+.get-a-quote__text { 
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    text-align:justify;
+    padding-top: 26px;
+    padding-left: 41px;
+    margin: 0px;
+    margin-bottom: 47px;
+    letter-spacing: -0.36px;
+}
+.form-contact  {
+    padding-left: 40px;
+    padding-right: 40px;
+   
+    display: flex;
+}
+.form {
+    display: flex;
+}
+
+input::-moz-placeholder { color:  #ff9696; }
+input::-webkit-input-placeholder { color:  #ff9696; }
+textarea::-moz-placeholder { color:  #ff9696; }
+textarea::-webkit-input-placeholder { color:  #ff9696; }
+
+.input__text {
+    background-color: #d6564f;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding-left: 15px;
+    width: 619px;
+    height: 39px;
+    border: 0;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.textarea__text_describe {
+    height: 201px;
+    vertical-align: text-top;
+    padding-top: 7px;
+    resize: none;
+}
+.input__submit {
+    border-radius: 5px;
+    height: 39px;
+    align-self: flex-end;
+    cursor: pointer;
+    
+}
+
+.contact__caption {
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.36px;
+    margin-bottom: 0;
+}
+
+.contact__text {
+    margin-top: 0;
+    margin-bottom: 21px;
+    padding-top: 10px;
+    width: 300px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+   
+    text-align:justify;
+    letter-spacing: -0.1px;
+}
+.contact__a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 19px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    
+ 
+}
+
+.contact__img {
+    margin-top: 0;
+    position: relative;
+    margin-right: 10px;
+   
+}
+
+
+
+.form-contact__dottom {
+    height: 6px;
+    background-color: #ea676b;
+}
+.footer {
+    overflow: hidden; /*убрали белую полоску сверху*/
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    background-color: #2d303a;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.footer__text {
+    margin-top: 29px;
+    color: #767e9e;
+    font-size: 12px;
+    letter-spacing: -0.1px;
+}
+.footer__social-media {
+    margin-top: 21px;
+}
+.footer__link {
+    margin-left: 1px;
+}
+.header__top{
+    background-color: #2d303a;
+    height: 1px;
+}
