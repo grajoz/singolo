@@ -40,7 +40,7 @@ body {
 }
 
 .header {
-    height: 89px;
+    height: 88px;
     background-color: #2d303a;
     color: white;
     overflow: hidden;
@@ -116,7 +116,7 @@ a {
 }
 
 .slider-dottom{ 
-    height: 5px;
+    height: 6px;
     background-color: #ea676b;
     /*background-color: #2d303a;
     width: 700px;*/
@@ -124,7 +124,7 @@ a {
 
 
 .our-services{  overflow: hidden;
-    height: 495px; 
+    height: 494px; 
     background-color: #f2f2f2;
 }
 
@@ -147,12 +147,16 @@ h2 {letter-spacing: 0.5px;
     letter-spacing: -0.20px;
     padding-left: 40px; 
     padding-right: 40px;
+    text-align: justify;
+    overflow: hidden;
+    height: 58px;
+    
 }
 
 .our-services-list{
     list-style-type: none;
     display: flex;
-   margin-top: 35px;    
+   margin-top: 39px;    
     
 }
 
@@ -190,7 +194,7 @@ h2 {letter-spacing: 0.5px;
     top: 11px;
 }
 
-    h3 {
+    h3 {text-align: left;
     letter-spacing: -0.3px;
     color: #666D89;
     font-weight: 900;
@@ -207,16 +211,18 @@ h2 {letter-spacing: 0.5px;
     margin-left: 80px;
     letter-spacing: 0px;
     text-align:justify;  /*значение justify растягивание текста по ширине*/
+    height: 62px;
+    overflow: hidden;
 }
 
 .service + .our-services-list  {
-    padding-top: -40px;
+    padding-top: -32px;
 }
 
 .our-services-list-next{
     list-style-type: none;
     display: flex;
-   margin-top: -5px;     
+   margin-top: -6px;     
 }
 
 .services-dottom{
@@ -250,20 +256,23 @@ h2 {letter-spacing: 0.5px;
     /*text-align: left;*/
     padding-top: 69.5px;
     padding-left: 40px;
-    margin: 0px;
+    margin: -1px;
     letter-spacing: 0.45px;
 }
 .portfolio__text { 
-    padding-top: 26px;
+    padding-top: 27px;
     padding-left: 41px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     margin: 0px;
     letter-spacing: -0.36px;
+    height: 24px;
+    overflow: hidden;
+    margin-bottom: 6px;
 }
 
 .portfolio__buttons {
@@ -388,10 +397,11 @@ h2 {letter-spacing: 0.5px;
     font-family: "Lato";
     font-weight: 300;
     letter-spacing: -0.33px;
+    overflow: hidden; 
 }
 
 .persons { 
-    margin-top: 48px;
+    margin-top: 47px;
     padding-left: 39.5px;
     padding-right: 33.5px;
     display: grid;
@@ -428,6 +438,8 @@ h2 {letter-spacing: 0.5px;
     text-align: left;
     letter-spacing: -0.2px;
     text-align:justify;
+    overflow: hidden;
+    height: 42px;
 }
 
 .person__social-media {
@@ -471,7 +483,7 @@ h2 {letter-spacing: 0.5px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    overflow: hidden;
     text-align:justify;
     padding-top: 26px;
     padding-left: 41px;
@@ -512,7 +524,7 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
 }
 
 .textarea__text_describe {
-    height: 201px;
+    height: 203px;
     vertical-align: text-top;
     padding-top: 7px;
     resize: none;
@@ -547,9 +559,10 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-   
+   overflow: hidden;
     text-align:justify;
     letter-spacing: -0.1px;
+    height: 88px;
 }
 .contact__a {
     text-decoration: none;
