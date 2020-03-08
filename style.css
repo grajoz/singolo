@@ -68,9 +68,16 @@ body {
     list-style-type: none; /* Убираем маркеры */
     padding-right: 27px;
 }
+.li-first:hover {
+    color:#ffffff;
+}
+
 
 a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.disk {
+color: #4c4f62;
 }
 
 .li-next{
@@ -78,6 +85,10 @@ a {
     padding-right: 26px; 
     padding-left: 3px; /* Отступ от маркера до текста */
 }
+.li-next:hover{
+    color: #f06c64;
+}
+
 
 .header-dottom {
     height: 6px;
@@ -194,6 +205,10 @@ h2 {letter-spacing: 0.5px;
     top: 11px;
 }
 
+.service-img:hover{
+    border: 2px solid rgb(90, 197, 28);
+}
+
     h3 {text-align: left;
     letter-spacing: -0.3px;
     color: #666D89;
@@ -205,6 +220,25 @@ h2 {letter-spacing: 0.5px;
     margin-bottom: -0.5px; /*вот приподнял на пол пикселька и тест снизу пошти идеално))))))*/
 }
 
+.service-li__caption {text-align: left;
+    letter-spacing: 0.1px;
+    color: #666D89;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 80px;
+    margin-top: 9px;
+    /*margin-bottom: -0.5px;*/ 
+    overflow: hidden;
+    text-align:justify;
+    padding-bottom: 2px;
+}
+
+.service-li__caption_specional {
+    letter-spacing: -0.3px;
+}
+
+
 .service { font-size: 12px;
     line-height: 21px;
     color: #767E9E;
@@ -213,6 +247,7 @@ h2 {letter-spacing: 0.5px;
     text-align:justify;  /*значение justify растягивание текста по ширине*/
     height: 62px;
     overflow: hidden;
+    margin-top:  9px;
 }
 
 .service + .our-services-list  {
@@ -295,10 +330,19 @@ h2 {letter-spacing: 0.5px;
     cursor:pointer;
     overflow: hidden;
 }
+.portfolio__button:hover {
+    color: #dedede;
+
+}
+
 .portfolio_button_all {
     width: 29px;
     color: #dedede;
     border: 1px solid  #c5c5c5;
+}
+.portfolio_button_all:hover {
+    color: #666d89;
+    background-color:   #81d66c;
 }
 .portfolio_button_artwork {
     margin-left: -1px;
@@ -309,18 +353,26 @@ h2 {letter-spacing: 0.5px;
     padding-left: 31px;
     display: grid; 
     grid-row-gap: 19px; /*растояние между рядами*/
-    grid-template-columns: 1fr 1fr 1fr 1fr; /*определяет количество, наименование и ширину столбцов и строк в макете
+    grid-template-areas:  "1fr 1fr 1fr 1fr"
+                          "1fr 1fr 1fr 1fr"
+                          "1fr 1fr 1fr 1fr";
+   
+    /*grid-template-columns: 1fr 1fr 1fr 1fr; /*определяет количество, наименование и ширину столбцов и строк в макете
                                              сетки, задает шаблон макета сетки, ссылаясь при этом на имена областей
                                               элементов, которые задаются с помощью свойства*/
-    grid-template-rows: 1fr 1fr 1fr;
+   /* grid-template-rows: 1fr 1fr 1fr;*/
     justify-self: center;
     align-self: center;
     overflow: hidden;
+   
+    height:610px;
 }
 .portfolio__img {  
     width:220px; /* ширина блока */
     height:188px; /* высота блока */
     margin: auto;
+    
+    overflow: hidden;
     }
 .portfolio_img_img1 {
     background: url(assets/img1.svg);
@@ -376,7 +428,7 @@ h2 {letter-spacing: 0.5px;
 .about-us__caption {
     padding-top: 68px;
     margin: 0;
-    margin-left: 41px;
+    margin-left: 0;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -451,6 +503,9 @@ h2 {letter-spacing: 0.5px;
 }
 .person__link {
     padding-right: 2px;
+}
+.person__link:hover {
+    background-color: #81d66c;
 }
 
 .get-a-quote {
@@ -572,8 +627,9 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
-    
- 
+}
+.contact__a:hover {
+background-color: blue;
 }
 
 .contact__img {
