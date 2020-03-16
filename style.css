@@ -121,12 +121,42 @@ color: #4c4f62;
     background-color: #323746;
 }
 
-.slider-img{
-    height: 594px;
+.slider-img__active {
+    height: 600px;
     background-color: #f06c64;
     position: relative;
+   
+}
+.slider-img__pacive{
+display: none;
 }
 
+.slider-img2 {
+    display: none;
+}
+
+.black-dislay-iphone-horizontal{
+    position: absolute;
+    left: 485px;
+    top: 187px;
+    background-color: black;
+    height: 189px;
+    width: 333px;
+}
+
+.display-none {
+    display: none;
+}
+
+.button-iphone-horizontal{
+    position: absolute;
+   
+    height: 37px;
+    width: 37px;
+    left: 436px;
+    top: 261px;
+    cursor: pointer;
+}
 .iphone_horizontal{
     position: absolute;
     left: 417px;
@@ -232,9 +262,7 @@ h2 {letter-spacing: 0.5px;
     top: 11px;
 }
 
-.service-img:hover{
-    border: 2px solid rgb(90, 197, 28);
-}
+
 
     h3 {text-align: left;
     letter-spacing: -0.3px;
@@ -602,7 +630,7 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
 }
 .input__submit {
     border-radius: 5px;
-    height: 39px;
+    height: 29px;
     align-self: flex-end;
     cursor: pointer;
 }

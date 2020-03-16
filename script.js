@@ -5,7 +5,100 @@ const SUBMIT=document.getElementById('submit');
 const CLOSE_BUTTON=document.getElementById('close-button');
 const PORTFOLIO__BUTTONS=document.getElementById('portfolio__buttons');
 const PORTFOLIO__IMGS=document.getElementById('portfolio__imgs');
-const J=0;
+const CHEV_SLIDE1_R=document.getElementById('chev_slide1_r');
+const CHEV_SLIDE2_R=document.getElementById('chev_slide2_r');
+const CHEV_SLIDE1_L=document.getElementById('chev_slide1_l');
+const CHEV_SLIDE2_L=document.getElementById('chev_slide2_l');
+const BUTTON_IPHONE_HORIZONTAL=document.getElementById('button-iphone-horizontal');
+const BUTTON_IPHONE_HORIZONTAL_NONE=document.getElementById('button-iphone-horizontal_none');
+
+
+BUTTON_IPHONE_HORIZONTAL.addEventListener('click', (event) => {
+
+    let elem=document.querySelector('#black-dislay-iphone-horizontal');
+    elem.classList.remove('display-none');
+    elem.classList.add('black-dislay-iphone-horizontal');
+   
+    let elem1=document.querySelector('#button-iphone-horizontal_none');
+    elem1.classList.remove('display-none');
+    elem1.classList.add('button-iphone-horizontal');
+
+    let elem4=document.querySelector('#button-iphone-horizontal');
+    elem4.classList.remove('button-iphone-horizontal');
+    elem4.classList.add('display-none');
+
+console.log(elem1)
+});
+
+BUTTON_IPHONE_HORIZONTAL_NONE.addEventListener('click', (event) => {
+
+    let elem3=document.querySelector('#black-dislay-iphone-horizontal');
+    elem3.classList.remove('black-dislay-iphone-horizontal');
+    elem3.classList.add('display-none');
+   
+    let elem4=document.querySelector('#button-iphone-horizontal');
+    elem4.classList.remove('display-none');
+    elem4.classList.add('button-iphone-horizontal');
+
+    let elem1=document.querySelector('#button-iphone-horizontal_none');
+    elem1.classList.remove('button-iphone-horizontal');
+    elem1.classList.add('display-none');
+
+
+});
+
+CHEV_SLIDE1_R.addEventListener('click', (event) => {
+
+    let elem=document.querySelector('#slide1');
+    console.log(elem);
+    elem.classList.remove('slider-img__active');
+    elem.classList.add('slider-img__pacive');
+   
+    elem=document.querySelector('#slide2');
+    elem.classList.remove('slider-img__pacive');
+    elem.classList.add('slider-img__active');
+
+});
+
+CHEV_SLIDE2_R.addEventListener('click', (event) => {
+
+    let elem=document.querySelector('#slide2');
+    console.log(elem);
+    elem.classList.remove('slider-img__active');
+    elem.classList.add('slider-img__pacive');
+   
+    elem=document.querySelector('#slide1');
+    elem.classList.remove('slider-img__pacive');
+    elem.classList.add('slider-img__active');
+
+});
+
+CHEV_SLIDE1_L.addEventListener('click', (event) => {
+
+    let elem=document.querySelector('#slide1');
+    console.log(elem);
+    elem.classList.remove('slider-img__active');
+    elem.classList.add('slider-img__pacive');
+   
+    elem=document.querySelector('#slide2');
+    elem.classList.remove('slider-img__pacive');
+    elem.classList.add('slider-img__active');
+
+});
+
+CHEV_SLIDE2_L.addEventListener('click', (event) => {
+
+    let elem=document.querySelector('#slide2');
+    console.log(elem);
+    elem.classList.remove('slider-img__active');
+    elem.classList.add('slider-img__pacive');
+   
+    elem=document.querySelector('#slide1');
+    elem.classList.remove('slider-img__pacive');
+    elem.classList.add('slider-img__active');
+
+});
+
 
 PORTFOLIO__IMGS.addEventListener('click', (event) => {
     let div="div";
@@ -14,10 +107,7 @@ PORTFOLIO__IMGS.addEventListener('click', (event) => {
 
 });
 
-let elem = document.querySelector("#img1")
-let j=0;
-//Выведем классы
-console.log(elem.classList)
+
 
 PORTFOLIO__BUTTONS.addEventListener('click', (event) => {
     PORTFOLIO__BUTTONS.querySelectorAll('button').forEach(el =>el.classList.remove('active'));
