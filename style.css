@@ -18,7 +18,7 @@ body {width: 1020px;
    }
 .wraper {
     width: 1020px;
-    overflow: hidden; /*убрали белую полоску сверху*/
+    /*overflow: hidden; /*убрали белую полоску сверху*/
 }
 
 
@@ -38,38 +38,59 @@ body {
     margin:0 auto;
     width: 1020px;
 }
-
+.header__top{
+    background-color: #2d303a;
+    height: 1px;
+}
 .header {
-    height: 88px;
+    height: 82px;
     background-color: #2d303a;
     color: white;
+    width: 1020px;
     overflow: hidden;
+    position: fixed;
+   
+    z-index: 10;
+      
 }
 
+.slroll{
+    margin-top: 82px;
+    top: 88px;
+}
+
+.ancher{
+    top: 88px;
+    height:100px;
+    margin-top: 88px;
+}
 .star {
     color:#f06c64;
 }
 
-.nav {position: absolute; /* Абсолютное позиционирование */
-    top: 46px; /* Положение от verhnego края */
-    left: 754px; 
+.nav {position: relative; /* Абсолютное позиционирование */
+    top: -6px; /* Положение от verhnego края */
+    left: 599px; 
     margin:0;
     padding:0;
     display: flex;
     flex-direction: row;
     font-size: 12px;
-    line-height: 6px;
+    /*line-height: 6px;*/
     font-weight: 400;
 }
 
 .li-first{
     padding-left: 20px; 
-    color: #f06c64;
+    color:#ffffff;
     list-style-type: none; /* Убираем маркеры */
     padding-right: 27px;
 }
 .li-first:hover {
-    color:#ffffff;
+    color: #f06c64;
+}
+li.li-first.active{
+    background-color: green;
 }
 
 
@@ -79,16 +100,21 @@ a {
 .disk {
 color: #4c4f62;
 }
-
+/*для синголо ДОМ*/
 .li-next{
+    list-style-type: none; /* Убираем маркеры */
     color:#ffffff;
-    padding-right: 26px; 
-    padding-left: 3px; /* Отступ от маркера до текста */
+    padding-right: 14px; 
+    padding-left: 14px; /* Отступ от маркера до текста */
 }
-.li-next:hover{
+.li-next:not(.active):hover{
     color: #f06c64;
+    cursor: pointer;
 }
-
+.li-next.active{
+    background-color: green;
+    cursor: default;
+}
 
 .header-dottom {
     height: 6px;
@@ -134,13 +160,14 @@ color: #4c4f62;
 }
 
 
-.our-services{  overflow: hidden;
+.our-services{  
+    overflow: hidden;
     height: 494px; 
     background-color: #f2f2f2;
 }
 
 h2 {letter-spacing: 0.5px;
-    padding-top: 42px;
+    padding-top: 62px;
     padding-left: 40px; 
     padding-right: 40px;
     font-size: 30px;
@@ -589,7 +616,31 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
     height: 39px;
     align-self: flex-end;
     cursor: pointer;
-    
+}
+
+/*SINGOLO DOM*/
+#message-block {
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background: #0007;
+    z-index: 1001;
+    margin: auto;
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border: 2px solid blueviolet;
+    text-align: center;
+    z-index: 1001;
 }
 
 .contact__caption {
@@ -665,8 +716,4 @@ background-color: blue;
 }
 .footer__link {
     margin-left: 1px;
-}
-.header__top{
-    background-color: #2d303a;
-    height: 1px;
 }
