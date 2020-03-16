@@ -305,9 +305,6 @@ h2 {letter-spacing: 0.5px;
     background-color: #2d303a;
     margin: 0px;
 }
-/*overflow: hidden; управляет отображением содержания
-     блочного элемента, если оно целиком не помещается и выходит за область заданных размеров. hidden
-    Отображается только область внутри элемента, остальное будет скрыто. */
 
 .portfolio__caption {
     font-size: 29.5px; 
@@ -340,6 +337,7 @@ h2 {letter-spacing: 0.5px;
 .portfolio__buttons {
     padding-top: 10px;
     padding-left: 41px;
+    width: 295px;
 }
 
 .portfolio__button {
@@ -356,51 +354,42 @@ h2 {letter-spacing: 0.5px;
     border: 1px solid  #666d89;
     cursor:pointer;
     overflow: hidden;
-}
-.portfolio__button:hover {
-    color: #dedede;
 
 }
-
-.portfolio_button_all {
-    width: 29px;
+.portfolio__button:not(.active):hover {
     color: #dedede;
-    border: 1px solid  #c5c5c5;
+    border: 1px solid  #dedede;
 }
-.portfolio_button_all:hover {
-    color: #666d89;
-    background-color:   #81d66c;
+.portfolio__button.active {
+    background-color: rgb(202, 247, 158);
 }
-.portfolio_button_artwork {
-    margin-left: -1px;
-}
+
+
 .portfolio__imgs {
-    margin-top: 19px;
+    margin-top: 14px;
     padding-right: 30px;
     padding-left: 31px;
     display: grid; 
-    grid-row-gap: 19px; /*растояние между рядами*/
+    grid-row-gap: 9px; /*растояние между рядами*/
     grid-template-areas:  "1fr 1fr 1fr 1fr"
                           "1fr 1fr 1fr 1fr"
                           "1fr 1fr 1fr 1fr";
-   
-    /*grid-template-columns: 1fr 1fr 1fr 1fr; /*определяет количество, наименование и ширину столбцов и строк в макете
-                                             сетки, задает шаблон макета сетки, ссылаясь при этом на имена областей
-                                              элементов, которые задаются с помощью свойства*/
-   /* grid-template-rows: 1fr 1fr 1fr;*/
     justify-self: center;
     align-self: center;
     overflow: hidden;
-   
     height:610px;
 }
 .portfolio__img {  
     width:220px; /* ширина блока */
     height:188px; /* высота блока */
     margin: auto;
-    
     overflow: hidden;
+    border: 5px solid #2d303a;
     }
+    .portfolio__img.active {
+        border: 5px solid #F06C64;
+    }
+
 .portfolio_img_img1 {
     background: url(assets/img1.svg);
 }
