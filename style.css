@@ -18,7 +18,7 @@ body {width: 1020px;
    }
 .wraper {
     width: 1020px;
-    /*overflow: hidden; /*убрали белую полоску сверху*/
+   /* overflow: hidden; /*убрали белую полоску сверху*/
 }
 
 
@@ -27,43 +27,43 @@ html {
     font-family: "Lato", sans-serif;
 }
 
-h1 {margin:40px auto auto  41px ;
+h1 {margin:41px auto auto  41px ;
     font-size: 25px;
     line-height: 6px;
     color: #ffffff;
     font-weight: 200;/* разницы что 200 что 700 невидно*/
     letter-spacing: -0.5px; /*!!! суперчеткое совпадение*/
 }
-body {
-    margin:0 auto;
-    width: 1020px;
-}
+
 .header__top{
     background-color: #2d303a;
     height: 1px;
 }
 .header {
-    height: 82px;
+    height: 89px;
     background-color: #2d303a;
     color: white;
     width: 1020px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: fixed;
-   
-    z-index: 10;
+    top: 1px;
+   z-index: 50;
+    
       
+}
+.section {
+   
+   position: relative;
+    left: 0;
+    top: -80px;
 }
 
 .slroll{
-    margin-top: 82px;
-    top: 88px;
+   
+    top: 128px;
 }
 
-.ancher{
-    top: 88px;
-    height:100px;
-    margin-top: 88px;
-}
+
 .star {
     color:#f06c64;
 }
@@ -86,14 +86,20 @@ body {
     list-style-type: none; /* Убираем маркеры */
     padding-right: 27px;
 }
+
+
 .li-first:hover {
     color: #f06c64;
 }
 li.li-first.active{
     background-color: green;
 }
-
-
+/*
+.menu a.active,
+.menu a:hover {
+    text-decoration: underline;
+    background-color: green;
+}*/
 a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
@@ -117,46 +123,124 @@ color: #4c4f62;
 }
 
 .header-dottom {
-    height: 6px;
+    margin-top: 88px;
+    height: 8px;
     background-color: #323746;
 }
+.slide1 {
+    position: absolute;
+    overflow: hidden;
+    
+    
+}
+.slide2 {
+    position: absolute;
+    overflow: hidden;
+    
+    
+}
+.slide1left33 {
+    position: absolute;
+    left: -20%;
+
+}
+
+.slide1left66 {
+    position: absolute;
+    left: -40%;
+
+}
+.slide1Right33 {
+    position: absolute;
+    left: 20%;
+}
+    .slide1Right66 {
+        position: absolute;
+        left: 40%;
+    }
+
+
+
+    #slide2img {
+        z-index: 3;
+    }
+    #slide1img {
+        z-index: 5;
+    }
+    #slideP1 {
+        z-index: 3;
+    }
+    #slideP2 {
+        z-index: 5;
+    }
+    .chev_pre {
+        z-index: 7;
+    }
+ .chev_next{
+     z-index: 7;
+ }
+
 
 .slider-img__active {
-    height: 600px;
-    background-color: #f06c64;
+    height: 594px;
+   /* background-color: #f06c64;*/
     position: relative;
+    overflow: hidden;
    
 }
 .slider-img__pacive{
 display: none;
+height: 594px;
+overflow: hidden;
 }
 
 .slider-img2 {
     display: none;
 }
-
+/* Horizontal*/
 .black-dislay-iphone-horizontal{
     position: absolute;
     left: 485px;
-    top: 187px;
+    top: 191px;
     background-color: black;
-    height: 189px;
+    height: 188px;
     width: 333px;
+    z-index: 7;
 }
-
 .display-none {
     display: none;
 }
-
 .button-iphone-horizontal{
     position: absolute;
-   
     height: 37px;
     width: 37px;
     left: 436px;
-    top: 261px;
+    top: 263px;
     cursor: pointer;
+    z-index: 7;
 }
+/* Vertical*/
+.black-dislay-iphone-vertical{
+    position: absolute;
+    left: 126px;
+    top: 119px;
+    background-color: black;
+    height: 333px;
+    width: 188px;
+    z-index: 7;
+}
+
+.button-iphone-vertical{
+   
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    left: 201px;
+    top: 464px;
+    cursor: pointer;
+    z-index: 7;
+}
+
 .iphone_horizontal{
     position: absolute;
     left: 417px;
@@ -192,12 +276,12 @@ display: none;
 
 .our-services{  
     overflow: hidden;
-    height: 494px; 
+    height: 499px; 
     background-color: #f2f2f2;
 }
 
 h2 {letter-spacing: 0.5px;
-    padding-top: 62px;
+    padding-top: 49px;
     padding-left: 40px; 
     padding-right: 40px;
     font-size: 30px;
@@ -300,19 +384,19 @@ h2 {letter-spacing: 0.5px;
     margin-left: 80px;
     letter-spacing: 0px;
     text-align:justify;  /*значение justify растягивание текста по ширине*/
-    height: 62px;
+    height: 65px;
     overflow: hidden;
     margin-top:  9px;
 }
 
-.service + .our-services-list  {
-    padding-top: -32px;
-}
+/*.service + .our-services-list  {
+    padding-top: -444px;
+}*/
 
 .our-services-list-next{
     list-style-type: none;
     display: flex;
-   margin-top: -6px;     
+   margin-top: -5px;     
 }
 
 .services-dottom{
@@ -637,13 +721,14 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
 
 /*SINGOLO DOM*/
 #message-block {
+    top: 10%;
     position: fixed;
     width: 100vw;
     height: 100vw;
     top: 0;
     left: 0;
     background: #0007;
-    z-index: 1001;
+    z-index: 9;
     margin: auto;
 }
 
@@ -652,13 +737,40 @@ textarea::-webkit-input-placeholder { color:  #ff9696; }
 }
 
 #message {
+    top: 20%;
+    left: 25%;
     position: absolute;
     width: 50%;
-    height: 50%;
+    height: 25%;
     border: 2px solid blueviolet;
     text-align: center;
-    z-index: 1001;
+    padding: 5px;
+    background-color: blanchedalmond;
+   z-index: 1001;
 }
+.message__span {
+    text-align: left;
+    display: block;  
+     height: 60%;
+     width: 100%;
+    overflow: hidden;
+}
+.result__subject {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.result__description {
+    overflow: hidden;
+
+}
+
+.close-button {
+    text-align: center;
+ 
+   
+    
+}
+
 
 .contact__caption {
     margin-top: 0px;
