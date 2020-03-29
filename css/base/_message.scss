@@ -1,0 +1,52 @@
+#message-block {
+    top: 10%;
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background: #0007;
+    z-index: 9;
+    margin: auto;
+
+  }
+  
+  #message-block.hidden {
+    display: none;
+  }
+ 
+  
+  #message {
+    top: 20%;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 25%;
+    border: 2px solid blueviolet;
+    text-align: center;
+    padding: 5px;
+    background-color: blanchedalmond;
+    z-index: 1001;
+  }
+  
+  .message__span {
+    text-align: left;
+    display: block;
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .result__subject {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .result__description {
+    overflow: hidden;
+  }
+  
+  .close-button {
+    text-align: center;
+  }
+  

@@ -1,0 +1,20 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "singolo",
+  "main": "script.js",
+  "scripts": {
+    "style": "sass --watch css/style.scss css/style.css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grajoz/singolo.git"
+  },
+  "author": "grajoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grajoz/singolo/issues"
+  },
+  "homepage": "https://github.com/grajoz/singolo#readme"
+}

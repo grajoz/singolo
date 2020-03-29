@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Lato;
+  src: url(../assets/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../assets/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(../assets/Lato-Black.ttf);
+}
+
+.display-none {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+  }
+
+  .h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+  }
+
+  .nav {
+    font-family: "Lato";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .our-services-p {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+  }
+
+  h3 {
+    font-family: "Lato";
+    letter-spacing: -0.3px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  
+.service-li__caption {
+  font-family: "Lato";
+    letter-spacing: 0.1px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .service-li__caption_specional {
+    font-family: "Lato";
+    letter-spacing: -0.3px;
+  }
+
+  .service {
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0px;
+  }
+
+  .portfolio__caption {
+    font-size: 29.5px;
+    line-height: 18px;
+    font-family: "Lato-Black";
+    font-weight: 1500;
+    letter-spacing: 0.45px;
+  }
+
+  .portfolio__text {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Lato";
+    font-weight: 300;
+    letter-spacing: -0.36px;
+  }
+
+  .about-us__caption {
+    font-size: 30px;
+    line-height: 18px;
+    font-family: "Lato-Black";
+    font-weight: 900;
+    letter-spacing: -0.15px;
+  }
+  
+  .about-us__text {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Lato";
+    font-weight: 300;
+    letter-spacing: -0.33px;
+  }
+
+  .person__name {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Lato-Black";
+    font-weight: 900;
+  }
+  
+  .person__text {
+    font-size: 12px;
+    line-height: 21px;
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: -0.2px;
+  }
+
+  .get-a-quote__caption {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 900;
+    font-family: "Lato-Black";
+    letter-spacing: -0.2px;
+  }
+  
+  .get-a-quote__text {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Lato";
+    font-weight: 300;
+    letter-spacing: -0.36px;
+  }
+  
+  
+.contact__caption {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Lato";
+    font-weight: 900;
+    letter-spacing: 0.36px;
+  }
+  
+  .contact__text {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: -0.1px;
+  }
+  .contact__a {
+    font-size: 12px;
+    line-height: 19px;
+    font-family: "Lato";
+    font-weight: 400;
+  }
+
+  .footer__text {
+    font-family: "Lato";
+    font-size: 12px;
+    letter-spacing: -0.1px;
+  }
+  
+  

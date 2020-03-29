@@ -1,0 +1,111 @@
+.get-a-quote {
+    background-color: #f06c64;
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    @include media-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include media-mobilesmall {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  /*singolo3*/
+  .get-a-quote__caption {
+    color: #f0d8d9;
+    text-align: left;
+    font-weight: 1500;
+    padding-top: 68px;
+    margin: 0px;
+  }
+  
+  .get-a-quote__text {
+    color: #f0d8d9;
+    overflow: hidden;
+    text-align: justify;
+    padding-top: 26px;
+    margin: 0px;
+    margin-bottom: 47px;
+  
+  }
+  
+  .form-contact {
+    display: flex;
+    @include media-mobile {
+      display: block;
+    }
+  }
+   
+  
+  .form {
+
+    display: flex;
+    max-width: 619px;
+    width: 60.69vw;
+    margin-right: 20px;
+    @include media-tablet {
+      margin-right: 29px;
+       max-width: 442px;
+    width: 57.55vw;
+  }
+  @include media-mobile {
+    margin-right: 0px;
+     max-width: 315px;
+    width: 84vw;
+  }
+
+  }
+
+  .contact {
+    width: 300px;
+    /*width: 29.41vw;*/
+    @include media-tablet {
+      max-width: 219px;
+    width: 28.51vw;
+  }
+  @include media-mobile {
+    max-width: 315px;
+    width: 84vw;
+  }
+  }
+
+
+  .contact__caption {
+    margin-top: 0px;
+    color: #f0d8d9;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  
+  .contact__text {
+    margin-top: 0;
+    margin-bottom: 21px;
+    padding-top: 10px;
+    color: #f0d8d9;
+    overflow: hidden;
+    text-align: justify;
+    
+
+      }
+
+
+
+  
+  
+  .contact__a {
+    text-decoration: none;
+    color: #f0d8d9;
+    text-align: left;
+  }
+  
+  .contact__a:hover {
+    background-color: blue;
+  }
+  
+  .contact__img {
+    margin-top: 0;
+    position: relative;
+  }

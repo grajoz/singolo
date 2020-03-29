@@ -1,0 +1,126 @@
+
+
+.about-us {
+   
+    background-color: #f2f2f2;
+    padding-left: 40px;
+    padding-right: 40px;
+ 
+
+    @include media-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include media-mobilesmall {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  .about-us__dottom {
+    height: 6px;
+    background-color: #f2f2f2;
+  }
+  
+  .about-us__caption {
+    padding-top: 68px;
+    margin: 0;
+    color: #666d89;
+    text-align: left;
+  }
+  
+  .about-us__text {
+
+    margin-top: 27px;
+    color: #767e9e;
+    overflow: hidden;
+  }
+  
+  .persons {
+    margin-top: 47px;
+    display: grid;
+    width: 100%;
+    max-width: 940px;
+    grid-column-gap: 20px;
+    @include media-tablet {
+      grid-column-gap: 14px;
+      max-width: 688px;
+      }
+
+    @include media-mobile {
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    /*align-self: center;*/
+  }
+  .person {
+    max-width: 300px;
+    width: 29.41vw;
+    @include media-tablet {
+      max-width: 219px;
+    width: 28.51vw;
+      }
+      @include media-mobile {
+        max-width: 314px;
+        width: 83.73vw;
+      }
+
+  }
+
+  .person__photo {
+    max-width: 300px;
+    max-height: 300px;
+    height: 29.43vw;
+    width: 29.43vw;
+    @include media-tablet {
+      max-width: 219px;
+      max-height: 219px;
+    width: 28.51vw;
+    height: 28.51vw;
+      }
+      @include media-mobile {
+        max-width: 314px;
+        max-height: 314px;
+        width: 83.73vw;
+        height: 83.73vw;
+      }
+
+
+  }
+
+ /* .person {}*/
+  
+  .person__name {
+    margin-top: 13px;
+    color: #666d89;
+    text-align: left;
+    margin-bottom: 0;
+    white-space: nowrap;
+    /* Запрещаем перенос строк */
+    overflow: hidden;
+    /* Обрезаем все, что не помещается в область */
+  }
+  
+  .person__text {
+    margin-top: 10px;
+
+    color: #767e9e;
+    text-align: left;
+
+    overflow: hidden;
+
+  }
+  
+  /*.person__social-media { }*/
+  
+  .person__social-media {
+    padding-top: 10px;
+    padding-left: 0.5px;
+  }
+  
+  .person__link {
+    padding-right: 2px;
+  }

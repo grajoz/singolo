@@ -1,0 +1,44 @@
+.footer__text {
+    margin-top: 29px;
+    color: #767e9e;
+    @include media-mobile {
+      display: none;
+    }
+  }
+  
+  .footer__social-media {
+    margin-top: 21px;
+  }
+  
+  .footer__link {
+    margin-left: 1px;
+  }
+  .form-contact__dottom {
+    height: 6px;
+    background-color: #ea676b;
+  }
+  
+  .footer {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-mobile {
+     display: block;
+     text-align: center;
+    }
+
+    height: 76px;
+    background-color: #2d303a;
+    padding-left: 40px;
+    padding-right: 40px;
+    @include media-mobile {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include media-mobilesmall {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  

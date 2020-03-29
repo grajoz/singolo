@@ -1,0 +1,160 @@
+.slider__1019{
+  display: none;
+  @include media-1019 {
+    display: block;
+max-width: 1019px;
+max-height: 600px;
+width: 99.9vw;
+height: 58.82vw;
+
+background: url(../assets/slide1019.png);
+background-size: cover;
+      }
+
+}
+.slider{
+ @include media-1019 {
+display: none;
+  }
+}
+.slide1 {
+    position: absolute;
+    overflow: hidden;
+   
+  
+  }
+  
+  .slide2 {
+    position: absolute;
+    overflow: hidden;
+   
+  }
+  
+  .slide1left33 {
+    position: absolute;
+    left: -20%;
+  }
+  
+  .slide1left66 {
+    position: absolute;
+    left: -40%;
+  }
+  
+  .slide1Right33 {
+    position: absolute;
+    left: 20%;
+  }
+  
+  .slide1Right66 {
+    position: absolute;
+    left: 40%;
+  }
+  
+  #slide2img {
+    z-index: 3;
+  }
+  
+  #slide1img {
+    z-index: 5;
+  }
+  
+  #slideP1 {
+    z-index: 3;
+  }
+  
+  #slideP2 {
+    z-index: 5;
+  }
+  
+  .chev_pre {
+    z-index: 7;
+  }
+  
+  .chev_next {
+    z-index: 7;
+  }
+  
+  .slider-img__active {
+    height: 594px;
+    /* background-color: #f06c64;*/
+    position: relative;
+    overflow: hidden;
+    @include media-tablet {
+      margin-right: 29px;
+       max-width: 442px;
+    width: 57.55vw;
+  }
+  @include media-mobile {
+    margin-right: 0px;
+     max-width: 315px;
+    width: 84vw;
+  }
+
+  }
+  
+  .slider-img__pacive {
+    display: none;
+    height: 594px;
+    overflow: hidden;
+  }
+  
+  .slider-img2 {
+    display: none;
+  }
+  
+  /* Horizontal*/
+  .black-dislay-iphone-horizontal {
+    position: absolute;
+    left: 485px;
+    top: 191px;
+    background-color: black;
+    height: 188px;
+    width: 333px;
+    z-index: 7;
+  }
+  
+  
+  .button-iphone-horizontal {
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    left: 436px;
+    top: 263px;
+    cursor: pointer;
+    z-index: 7;
+  }
+  
+  /* Vertical*/
+  .black-dislay-iphone-vertical {
+    position: absolute;
+    left: 126px;
+    top: 119px;
+    background-color: black;
+    height: 333px;
+    width: 188px;
+    z-index: 7;
+  }
+  
+  .button-iphone-vertical {
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    left: 201px;
+    top: 464px;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .chev_pre {
+    position: absolute;
+    left: 42px;
+    top: 280px;
+    transform: rotate(180deg);
+  }
+  
+  .chev_next {
+    position: absolute;
+    right: 41px;
+    top: 280px;
+  }
+  

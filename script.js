@@ -17,6 +17,20 @@ const BUTTON_IPHONE_VERTICAL=document.getElementById('button-iphone-vertical');
 const TIME33=50;
 const TIME66=300;
 
+
+
+const NAV=document.getElementById('nav');
+NAV.addEventListener('click', (event) => {
+    NAV.querySelectorAll('li').forEach(el =>el.classList.remove('active'));
+    event.target.classList.add('active');
+    
+});
+
+
+
+
+
+
 window.onscroll = function() {
     posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     
@@ -302,9 +316,3 @@ CLOSE_BUTTON.addEventListener('click', () => {
     document.getElementById('description').value='';
 });
 
-const NAV=document.getElementById('nav');
-NAV.addEventListener('click', (event) => {
-    NAV.querySelectorAll('li').forEach(el =>el.classList.remove('active'));
-    event.target.classList.add('active');
-    
-});

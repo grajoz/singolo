@@ -2,28 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
         <title>Singolo</title>
-    </head><section class="section home__ancher" id="home"></section>
+    </head>
     <body>
-        
-        <div class="wrapper ">
-            <header class="header">
-                <h1>SINGOLO<span class="star">*</span></h1>
-                <nav class="header__nav menu">
-                    <ul class="nav menu" id="nav">
-                        <a href="#home" ><li id="home__nav" class="li-next active" >HOME</li></a>
-                        <a href="#services" ><li id="services__nav" class="li-next">SERVICES</li></a>
-                        <a href="#portfolio"><li id="portfolio__nav" class="li-next">PORTFOLIO</li></a>
-                        <a href="#about"><li id="about__nav" class="li-next">ABOUT</li></a>
-                        <a href="#contact"><li id="contact__nav" class="li-next">CONTACT</li></a>
-                    </ul>
-                </nav>
-            </header>
-            
-            <div class="slroll">
-                <div class=header-dottom></div>
+        <section class="section home__ancher" id="home">
+            <div class="wrapper header__wrapper">
+                <header class="header">
+                    <button class="hamburg">
+                        <img src="./assets/img/hamburg.png" alt="nav">
+                      </button>
+                    <h1 class="h1">SINGOLO<span class="star">*</span></h1>
+                    <nav class="header__nav">
+
+                        <!------ul id="menu" class="menu"------->
+                        <ul class="nav menu" id="nav">
+                            <a href="#home" ><li id="home__nav" class="anchor anchor-main li-next active" >HOME</li></a>
+                            <a href="#services" ><li id="services__nav" class="anchor anchor-service li-next">SERVICES</li></a>
+                            <a href="#portfolio"><li id="portfolio__nav" class="anchor li-next">PORTFOLIO</li></a>
+                            <a href="#about"><li id="about__nav" class="anchor anchor-portfolio li-next">ABOUT</li></a>
+                            <a href="#contact"><li id="contact__nav" class="anchor anchor-contact li-next">CONTACT</li></a>
+                        </ul>
+                    </nav>
+                </header>
+            <div class="header-dottom"></div>    
+            </div>
+            <div class="wrapper slider__1019">
+               
+            </div>
+            <div class="wrapper slider">
                 <div id="slide1" class="slider-img__active">
                    
                     <img id="slide2img" class="slide2" src="assets/slide2.png" alt="slide2">
@@ -53,21 +61,22 @@
                     <a id="chev_slide2_r" href="#"><img class="chev_pre" src="assets/chev.svg" alt="chev_pre"></a>
                     <a id="chev_slide2_l" href="#"><img class="chev_next" src="assets/chev.svg" alt="chev_next"></a>
                 </div>
-                
-                
-                    
-                <div class="our-services" > <section class="section services" id="services"></section>
-                    <h2 >Our Services</h2>
+            </div>
+        </section>          
+        <section class="section services" id="services">        
+            <div class="wrapper our-services__wrapper">        
+                <div class="our-services" > 
+                    <h2 class="h2">Our Services</h2>
                     <p class="our-services-p">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
                                 luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
-                                commodo, tortor mauris condimentum nibh. zdfbzdfgnhzfgnzfbnxfnbxvbnxfbnvcbnxvbnxfbnxcfbnxvnbxzfvbncvbnvbnxvbnxvbnxvbnvxbn
+                                commodo, tortor mauris condimentum nibh.
                     </p>
                     <div class="our-services-row">
                         <ul class="our-services-list">
                             <li class="service-li">
                                 <img class="service-img"src="assets/pen.svg" alt="pen">
                                 <h3 class="service-li__caption">Custom Design</h3>
-                                <p class="service">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit. afgXCbaedgxZbFzdfhZCfhffdghnxfvnbxcvnxcfcgnbxfgvnxfnx</p>
+                                <p class="service">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                             </li>
                             <li class="service-li">
                                 <img class="service-img"src="assets/bulb.svg" alt="bulb">
@@ -79,12 +88,11 @@
                                 <h3 class="service-li__caption">Love Is The Answer</h3>
                                 <p class="service">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                             </li>
-                        </ul>
-                        <ul class="our-services-list-next">
+
                             <li class="service-li">
                                 <img class="service-img"src="assets/phone.svg" alt="phone">
                                 <h3 class="service-li__caption">Responsive Layout</h3>
-                                <p class="service">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo. fgdghzfghzfghzfghzfghzfghzfghzfghzfghzfghzfhzghzghfghzx</p>
+                                <p class="service">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
                             </li>
                             <li class="service-li">
                                 <img class="service-img"src="assets/bubble.svg" alt="bubble">
@@ -101,11 +109,13 @@
                     </div>   
                    
                 </div><!------our-services-->
-               <div class=services-dottom></div>
-                <!------- SINGOLO 2-->
-
-                
-                <div class="portfolio" > <section class="section portfolio__ancher" id="portfolio"></section>
+            <div class="services-dottom"></div>    
+            </div>
+        </section>
+        
+        <section class="section portfolio__ancher" id="portfolio">       
+            <div class="wrapper portfolio__wrapper">    
+                <div class="portfolio" > 
                         <h2 class="portfolio__caption">Portfolio</h2>
                         <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                         <div id="portfolio__buttons" class="portfolio__buttons">
@@ -127,15 +137,15 @@
                                 <div id="img10" class="portfolio__img portfolio_img_img10"></div>
                                 <div id="img11" class="portfolio__img portfolio_img_img11"></div>
                                 <div id="img12" class="portfolio__img portfolio_img_img12"></div>
-                            
-
                         </div><!-----class="portfolio__imgs"-->
-                      
-                        
                 </div><!-------Porfolio-->
-                <div class=portfolio__dottom></div>    
-                
-                <div class="about-us" >  <section class="section about__ancher" id="about"></section>
+            <div class="portfolio__dottom"></div> 
+            </div> 
+              
+        </section>
+        <section class="section about__ancher" id="about">        
+            <div class="wrapper about-us__wrapper">
+                <div class="about-us" >  
                     <h2 class="about-us__caption">About Us</h2>
                     <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
                                 non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
@@ -161,7 +171,7 @@
                             <img src="assets/desmond-miles.png" class="person__photo" alt="photo">
                             <div class="person__name">Desmond Miles</div>
                             <p class="person__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
-                                                            viverra lacus ut, utlrices velit. o;jdnf;vbjzd;jb;zjdn;bjn;zdjnb;lzjnvbzdbjn;ljn 
+                                                            viverra lacus ut, utlrices velit. 
                             </p>
                             <div class="person__social-media">
                                 <span class="person__link"><a href="#"><img src="assets/facebook.png" alt=""></a></span>
@@ -184,12 +194,14 @@
                             </div>
                         </div>    
                     </div><!----class="persons"------>
-                    <div class=about-us__dottom></div>
+                    
                 </div><!------class="about-us"-->
-
-                    <!--- SINGOLO   3------->
-                
-                <div class="get-a-quote"> <section class="section contact__ancher" id="contact"></section>
+                <div class="wrapper about-us__dottom"></div>
+            </div>
+        </section>
+        <section class="section contact__ancher" id="contact">
+            <div class="wrapper wrapper__get-a-quote">    
+                <div class="get-a-quote"> 
                     <h2 class="get-a-quote__caption">Get a Quote</h2>
                     <p class="get-a-quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
                                     nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -225,9 +237,12 @@
                         </div><!-----class="contact"---->
                     </div><!------class="form-contact"----->
                 </div> <!---------class="get-a-quote"-->
-                <div class=form-contact__dottom>
-                </div>
-                        <div class="footer">
+            <div class="form-contact__dottom"></div>
+            </div>
+                 
+            
+                <div class="wrapper">
+                    <footer class="footer">
                             <p class="footer__text">© Copyright 2013</p>
                             <div class="footer__social-media">
                                 <span class="footer__link"><a href="#"><img src="assets/facebook.png" alt=""></a></span>
@@ -235,31 +250,30 @@
                                 <span class="footer__link"><a href="#"><img src="assets/twitter.png" alt=""></a></span>
                                 <span class="footer__link"><a href="#"><img src="assets/linkedin.png" alt=""></a></span>
                             </div>
-                        </div><!----class="footer"----->
-                    
-           
-            </div><!-----/div scroll-->
-        </div>
-            
-           
-        </div><!-----wrapper-->
- <!---- message-block-->
+                    </footer><!----class="footer"----->
+                </div>
+                <!---- message-block-->
             <div id="message-block" class="hidden">
                <div id="message" class="message">
                     <span class="message__span">
                         <span>The letter was sent (Письмо отправлено).</span>
                         <br>
                         <br>
-                        <span id="result__subject" class="result__subject">sfgszdfg</span>
+                        <span id="result__subject" class="result__subject">text</span>
                         <br>
-                        <span id="result__description" class="result__description">SFDgSDGSDGSD</span>
+                        <span id="result__description" class="result__description">text</span>
                         <br>
                     </span>
                     <br>
                     <button id="close-button" class="close-button">OK</button>
                 </div>
             </div><!-----message block-->
-<script src="script.js"></script>
+        </section>
+            
+           
+
+ 
+    <script src="script.js"></script>
     </body>
     
 </html>
