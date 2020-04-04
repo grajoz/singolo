@@ -1,6 +1,6 @@
 console.log("kukusiky");
 
-
+const NAV_BUTTON=document.getElementById('nav-button');
 const SUBMIT=document.getElementById('submit');
 const CLOSE_BUTTON=document.getElementById('close-button');
 const PORTFOLIO__BUTTONS=document.getElementById('portfolio__buttons');
@@ -18,11 +18,56 @@ const TIME33=50;
 const TIME66=300;
 
 
+NAV_BUTTON.addEventListener('click', (event) => {
+    let elem_nav=document.getElementById('nav');
+    elem_nav.classList.toggle('nav__menu_active');
+    let elem_nav_button=document.getElementById('nav-button');
+    elem_nav_button.classList.toggle('hamburg-active');
+    let elem_h1_ac=document.getElementById('h1');
+    elem_h1_ac.classList.toggle('h1-active');
+    let elem_h1=document.getElementById('h1');
+    elem_h1.classList.toggle('h1');
+});
+
+///// плавный скролл
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+///// плавный скролл
+
+
 
 const NAV=document.getElementById('nav');
 NAV.addEventListener('click', (event) => {
     NAV.querySelectorAll('li').forEach(el =>el.classList.remove('active'));
     event.target.classList.add('active');
+
+
+
+
+    let elem_nav_button=document.getElementById('nav-button');
+    if (elem_nav_button.classList.value==='hamburg hamburg-active'){
+        let elem_nav=document.getElementById('nav');
+        elem_nav.classList.toggle('nav__menu_active');
+        let elem_nav_button=document.getElementById('nav-button');
+        elem_nav_button.classList.toggle('hamburg-active');
+        let elem_h1_ac=document.getElementById('h1');
+        elem_h1_ac.classList.toggle('h1-active');
+        let elem_h1=document.getElementById('h1');
+        elem_h1.classList.toggle('h1');
+
+};
     
 });
 
@@ -114,7 +159,7 @@ CHEV_SLIDE1_L.addEventListener('click', (event) => {
 
 function sayHi3() {
     let elem=document.querySelector('#slide1');
-    console.log(elem);
+   
     elem.classList.remove('slider-img__active');
     elem.classList.add('slider-img__pacive');
    
@@ -150,7 +195,7 @@ CHEV_SLIDE2_L.addEventListener('click', (event) => {
 
 function sayHi3() {
     let elem=document.querySelector('#slide2');
-    console.log(elem);
+   
     elem.classList.remove('slider-img__active');
     elem.classList.add('slider-img__pacive');
    
@@ -246,33 +291,68 @@ CHEV_SLIDE2_R.addEventListener('click', (event) => {
             elem.classList.add('slider-img__active');
 }      setTimeout(sayHi3, TIME66+1);
 });
-
-
+let controlPosition;
+/*const PORTFOLIO__IMGS=document.getElementById('portfolio__imgs');*/
 PORTFOLIO__IMGS.addEventListener('click', (event) => {
     let div="div";
     PORTFOLIO__IMGS.querySelectorAll(div).forEach(el =>el.classList.remove('active'));
     event.target.classList.add('active');
-
+    controlPosition=event.target.classList.value;
+    controlPosition=controlPosition.match(/\d/g);
+    controlPosition=Number(controlPosition.join(''));
+ 
 });
 
 
 let controlRandom=0;
+
 PORTFOLIO__BUTTONS.addEventListener('click', (event) => {
 PORTFOLIO__BUTTONS.querySelectorAll('button').forEach(el =>el.classList.remove('active'));
     event.target.classList.add('active');
-       let r; 
+      let y=0;
+      let x=0;
+      let z=0;
+        let r; 
        let random=Math.ceil(Math.random()*12);
        while (controlRandom==random){random=Math.ceil(Math.random()*12)};
     let a="", b="";
     for (let i=1;i<13;i++){
+
             controlRandom=random;
             r=i+random;
             if (r>12){r=r-12};
             a="portfolio_img_img"+r;  
-            elem = document.querySelector("#img"+i);
+            let elem = document.querySelector("#img"+i);
+            elemR = document.querySelector("#img"+r);
+          
+            if (elem.classList.contains("active")){
+                 elem.classList.remove(elem.classList[1]);
+                 y=i;
+            } 
+
             elem.classList.remove(elem.classList[1]);
             elem.classList.add(a);
+
+            
+           
+        
     } 
+    
+    for (let i=1;i<13;i++){
+ 
+    elem = document.querySelector("#img"+i); 
+    elem1 =Number(elem.classList.value.match(/\d/g).join(''));
+
+  if (controlPosition==elem1){elem.classList.add("active");
+ 
+}
+   
+
+
+
+}
+    
+ 
 });
 
 SUBMIT.addEventListener('click', () => {

@@ -12,6 +12,15 @@
   src: url(../assets/Lato-Black.ttf);
 }
 
+.section {
+  padding-top: 89px;
+  margin-top: -89px;
+  @include media-heder-hlop {
+    padding-top: 71px;
+    margin-top: -71px;
+  }
+}
+
 .display-none {
   display: none;
 }

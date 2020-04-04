@@ -15,6 +15,9 @@
 
 .header-dottom {
   margin-top: 89px;
+  @include media-heder-hlop {
+    margin-top: 64px;
+  }
   height: 6px;
  background-color: #323746;
 
